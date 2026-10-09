@@ -7,7 +7,8 @@ Does not call SerpApi.
 Usage:
     python pick.py "coffee shops near Koramangala"
 
-Needs TYPESAFE_API_KEY or OPENROUTER_API_KEY in the environment.
+Reads JEV_KEY from backend/.env and passes it to the Jev server as TYPESAFE_API_KEY.
+OPENROUTER_API_KEY in the environment works as well.
 """
 
 import json
@@ -24,15 +25,22 @@ DAISY_TOP = 3
 
 
 def load_dotenv():
-    path = ROOT.parent / ".env"
-    if not path.exists():
-        return
-    for line in path.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line or line.startswith("#") or "=" not in line:
+    """Load backend/.env, then the repo root .env. Does not override existing vars."""
+    for path in (ROOT / ".env", ROOT.parent / ".env"):
+        if not path.exists():
             continue
-        key, value = line.split("=", 1)
-        os.environ.setdefault(key.strip(), value.strip().strip("\"'"))
+        for line in path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            os.environ.setdefault(key.strip(), value.strip().strip("\"'"))
+    # backend/.env stores the Jev key as JEV_KEY. The MCP server reads TYPESAFE_API_KEY.
+    if not os.environ.get("TYPESAFE_API_KEY"):
+        for name in ("JEV_KEY", "JEV_API", "JEV_API_KEY"):
+            if os.environ.get(name):
+                os.environ["TYPESAFE_API_KEY"] = os.environ[name]
+                break
 
 
 def candidates(path):
@@ -155,10 +163,10 @@ def show(heading, found, catalog):
 def main():
     load_dotenv()
     if not (os.environ.get("TYPESAFE_API_KEY") or os.environ.get("OPENROUTER_API_KEY")):
-        sys.exit("Set TYPESAFE_API_KEY or OPENROUTER_API_KEY before running this script.")
+        sys.exit("Put JEV_KEY in backend/.env, or set TYPESAFE_API_KEY / OPENROUTER_API_KEY.")
     query = query_from_args()
     if not query:
-        sys.exit("Pass a query: python pick.py \"coffee shops near Koramangala\"")
+        sys.exit("Pass a query: python pick.py \"coffee shops near Menlo Park\"")
 
     serp = candidates(ROOT / "serpapi_tools.json")
     daisy = candidates(ROOT / "daisyui_components.json")
