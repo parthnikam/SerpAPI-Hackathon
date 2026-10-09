@@ -1,0 +1,2779 @@
+{
+  "source": "https://daisyui.com/components/",
+  "usage": "Each tool is one daisyUI component. Call the tool whose description matches the data. Fill only the slots you have. Class names for rendering are in meta.classes.",
+  "count": 68,
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "accordion",
+        "description": "Use the accordion to show and hide content. Only one item can be open at a time. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            },
+            "title": {
+              "type": "string",
+              "description": "Value for the {title} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "### Accordion",
+        "slug": "accordion",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/accordion/",
+        "classes": {
+          "component": [
+            "collapse"
+          ],
+          "part": [
+            "collapse-title",
+            "collapse-content"
+          ],
+          "modifier": [
+            "collapse-arrow",
+            "collapse-plus",
+            "collapse-open",
+            "collapse-close"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "alert",
+        "description": "Use an alert to give users information about an important event. Category: feedback.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Alert",
+        "slug": "alert",
+        "category": "feedback",
+        "docs": "https://daisyui.com/components/alert/",
+        "classes": {
+          "component": [
+            "alert"
+          ],
+          "style": [
+            "alert-outline",
+            "alert-dash",
+            "alert-soft"
+          ],
+          "color": [
+            "alert-info",
+            "alert-success",
+            "alert-warning",
+            "alert-error"
+          ],
+          "direction": [
+            "alert-vertical",
+            "alert-horizontal"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "aura",
+        "description": "An aura adds a light effect around the border of a component. Use it to make an important button, card, or div easy to see. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Aura",
+        "slug": "aura",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/aura/",
+        "classes": {
+          "component": [
+            "aura"
+          ],
+          "style": [
+            "aura-dual",
+            "aura-rainbow",
+            "aura-holo",
+            "aura-gold",
+            "aura-silver",
+            "aura-glow"
+          ],
+          "size": [
+            "aura-xs",
+            "aura-sm",
+            "aura-md",
+            "aura-lg",
+            "aura-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "avatar",
+        "description": "Use an avatar to show a thumbnail image. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "image_url": {
+              "type": "string",
+              "description": "Value for the {image-url} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Avatar",
+        "slug": "avatar",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/avatar/",
+        "classes": {
+          "component": [
+            "avatar",
+            "avatar-group"
+          ],
+          "modifier": [
+            "avatar-online",
+            "avatar-offline",
+            "avatar-placeholder"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "badge",
+        "description": "Use a badge to show the status of data. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Badge",
+        "slug": "badge",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/badge/",
+        "classes": {
+          "component": [
+            "badge"
+          ],
+          "style": [
+            "badge-outline",
+            "badge-dash",
+            "badge-soft",
+            "badge-ghost"
+          ],
+          "color": [
+            "badge-neutral",
+            "badge-primary",
+            "badge-secondary",
+            "badge-accent",
+            "badge-info",
+            "badge-success",
+            "badge-warning",
+            "badge-error"
+          ],
+          "size": [
+            "badge-xs",
+            "badge-sm",
+            "badge-md",
+            "badge-lg",
+            "badge-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "breadcrumbs",
+        "description": "Use breadcrumbs to help users navigate. Category: navigation.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Breadcrumbs",
+        "slug": "breadcrumbs",
+        "category": "navigation",
+        "docs": "https://daisyui.com/components/breadcrumbs/",
+        "classes": {
+          "component": [
+            "breadcrumbs"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "button",
+        "description": "Use buttons to start actions. Category: actions.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Button",
+        "slug": "button",
+        "category": "actions",
+        "docs": "https://daisyui.com/components/button/",
+        "classes": {
+          "component": [
+            "btn"
+          ],
+          "color": [
+            "btn-neutral",
+            "btn-primary",
+            "btn-secondary",
+            "btn-accent",
+            "btn-info",
+            "btn-success",
+            "btn-warning",
+            "btn-error"
+          ],
+          "style": [
+            "btn-outline",
+            "btn-dash",
+            "btn-soft",
+            "btn-ghost",
+            "btn-link"
+          ],
+          "behavior": [
+            "btn-active",
+            "btn-disabled"
+          ],
+          "size": [
+            "btn-xs",
+            "btn-sm",
+            "btn-md",
+            "btn-lg",
+            "btn-xl"
+          ],
+          "modifier": [
+            "btn-wide",
+            "btn-block",
+            "btn-square",
+            "btn-circle"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calendar",
+        "description": "The calendar component includes styles for different calendar libraries. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Calendar",
+        "slug": "calendar",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/calendar/",
+        "classes": {
+          "component": [
+            "cally",
+            "react-day-picker",
+            "vc"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "card",
+        "description": "Use cards to group and show content. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "image_url": {
+              "type": "string",
+              "description": "Value for the {image-url} slot in this component."
+            },
+            "alt_text": {
+              "type": "string",
+              "description": "Value for the {alt-text} slot in this component."
+            },
+            "title": {
+              "type": "string",
+              "description": "Value for the {title} slot in this component."
+            },
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            },
+            "actions": {
+              "type": "string",
+              "description": "Value for the {actions} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Card",
+        "slug": "card",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/card/",
+        "classes": {
+          "component": [
+            "card"
+          ],
+          "part": [
+            "card-title",
+            "card-body",
+            "card-actions"
+          ],
+          "style": [
+            "card-border",
+            "card-dash"
+          ],
+          "modifier": [
+            "card-side",
+            "image-full"
+          ],
+          "size": [
+            "card-xs",
+            "card-sm",
+            "card-md",
+            "card-lg",
+            "card-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "carousel",
+        "description": "Use a carousel to show images or content in a scrollable area. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Carousel",
+        "slug": "carousel",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/carousel/",
+        "classes": {
+          "component": [
+            "carousel"
+          ],
+          "part": [
+            "carousel-item"
+          ],
+          "modifier": [
+            "carousel-start",
+            "carousel-center",
+            "carousel-end"
+          ],
+          "direction": [
+            "carousel-horizontal",
+            "carousel-vertical"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "chat",
+        "description": "A chat bubble shows one line of a conversation and its related data. This data can include the author image, name, and time. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Chat",
+        "slug": "chat",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/chat/",
+        "classes": {
+          "component": [
+            "chat"
+          ],
+          "part": [
+            "chat-image",
+            "chat-header",
+            "chat-footer",
+            "chat-bubble"
+          ],
+          "placement": [
+            "chat-start",
+            "chat-end"
+          ],
+          "color": [
+            "chat-bubble-neutral",
+            "chat-bubble-primary",
+            "chat-bubble-secondary",
+            "chat-bubble-accent",
+            "chat-bubble-info",
+            "chat-bubble-success",
+            "chat-bubble-warning",
+            "chat-bubble-error"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "checkbox",
+        "description": "Use a checkbox to select or deselect a value. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Checkbox",
+        "slug": "checkbox",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/checkbox/",
+        "classes": {
+          "component": [
+            "checkbox"
+          ],
+          "color": [
+            "checkbox-primary",
+            "checkbox-secondary",
+            "checkbox-accent",
+            "checkbox-neutral",
+            "checkbox-success",
+            "checkbox-warning",
+            "checkbox-info",
+            "checkbox-error"
+          ],
+          "size": [
+            "checkbox-xs",
+            "checkbox-sm",
+            "checkbox-md",
+            "checkbox-lg",
+            "checkbox-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "collapse",
+        "description": "Use the collapse component to show and hide content. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Value for the {title} slot in this component."
+            },
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Collapse",
+        "slug": "collapse",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/collapse/",
+        "classes": {
+          "component": [
+            "collapse"
+          ],
+          "part": [
+            "collapse-title",
+            "collapse-content"
+          ],
+          "modifier": [
+            "collapse-arrow",
+            "collapse-plus",
+            "collapse-open",
+            "collapse-close"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "countdown",
+        "description": "A countdown gives a transition effect when a number changes from 0 through 999. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "number": {
+              "type": "string",
+              "description": "Value for the {number} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Countdown",
+        "slug": "countdown",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/countdown/",
+        "classes": {
+          "component": [
+            "countdown"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "diff",
+        "description": "Use the diff component to show a side-by-side comparison of two items. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "item1": {
+              "type": "string",
+              "description": "Value for the {item1} slot in this component."
+            },
+            "item2": {
+              "type": "string",
+              "description": "Value for the {item2} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Diff",
+        "slug": "diff",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/diff/",
+        "classes": {
+          "component": [
+            "diff"
+          ],
+          "part": [
+            "diff-item-1",
+            "diff-item-2",
+            "diff-resizer"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "divider",
+        "description": "Use a divider to separate content vertically or horizontally. Category: layout.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "description": "Value for the {text} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Divider",
+        "slug": "divider",
+        "category": "layout",
+        "docs": "https://daisyui.com/components/divider/",
+        "classes": {
+          "component": [
+            "divider"
+          ],
+          "color": [
+            "divider-neutral",
+            "divider-primary",
+            "divider-secondary",
+            "divider-accent",
+            "divider-success",
+            "divider-warning",
+            "divider-info",
+            "divider-error"
+          ],
+          "direction": [
+            "divider-vertical",
+            "divider-horizontal"
+          ],
+          "placement": [
+            "divider-start",
+            "divider-end"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "dock",
+        "description": "A dock is also called bottom navigation or a bottom bar. It gives navigation options and stays at the bottom of the screen. Category: navigation.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            },
+            "icon": {
+              "type": "string",
+              "description": "Value for the {icon} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Dock",
+        "slug": "dock",
+        "category": "navigation",
+        "docs": "https://daisyui.com/components/dock/",
+        "classes": {
+          "component": [
+            "dock"
+          ],
+          "part": [
+            "dock-label"
+          ],
+          "modifier": [
+            "dock-active"
+          ],
+          "size": [
+            "dock-xs",
+            "dock-sm",
+            "dock-md",
+            "dock-lg",
+            "dock-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "drawer",
+        "description": "A drawer is a grid layout that can show and hide a sidebar. The sidebar can be on either side of the page. Category: layout.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            },
+            "sidebar": {
+              "type": "string",
+              "description": "Value for the {SIDEBAR} slot in this component."
+            },
+            "icon_here": {
+              "type": "string",
+              "description": "Value for the {ICON_HERE} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Drawer",
+        "slug": "drawer",
+        "category": "layout",
+        "docs": "https://daisyui.com/components/drawer/",
+        "classes": {
+          "component": [
+            "drawer"
+          ],
+          "part": [
+            "drawer-toggle",
+            "drawer-content",
+            "drawer-side",
+            "drawer-overlay",
+            "drawer-button"
+          ],
+          "placement": [
+            "drawer-end"
+          ],
+          "modifier": [
+            "drawer-open"
+          ],
+          "variant": [
+            "is-drawer-open:",
+            "is-drawer-close:"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "dropdown",
+        "description": "A dropdown can open a menu or another element when the user clicks the button. Category: actions.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Value for the {id} slot in this component."
+            },
+            "anchor": {
+              "type": "string",
+              "description": "Value for the {anchor} slot in this component."
+            },
+            "button": {
+              "type": "string",
+              "description": "Value for the {button} slot in this component."
+            },
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Dropdown",
+        "slug": "dropdown",
+        "category": "actions",
+        "docs": "https://daisyui.com/components/dropdown/",
+        "classes": {
+          "component": [
+            "dropdown"
+          ],
+          "part": [
+            "dropdown-content"
+          ],
+          "placement": [
+            "dropdown-start",
+            "dropdown-center",
+            "dropdown-end",
+            "dropdown-top",
+            "dropdown-bottom",
+            "dropdown-left",
+            "dropdown-right"
+          ],
+          "modifier": [
+            "dropdown-hover",
+            "dropdown-open",
+            "dropdown-close"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "fab",
+        "description": "A FAB is a floating action button that stays in a bottom corner of the screen. It contains a focusable, accessible element with a button role. When the user clicks or focuses it, more speed-dial buttons appear. These buttons have a vertical or quarter-circle arrangement. Category: actions.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "iconoriginal": {
+              "type": "string",
+              "description": "Value for the {IconOriginal} slot in this component."
+            },
+            "icon1": {
+              "type": "string",
+              "description": "Value for the {Icon1} slot in this component."
+            },
+            "icon2": {
+              "type": "string",
+              "description": "Value for the {Icon2} slot in this component."
+            },
+            "icon3": {
+              "type": "string",
+              "description": "Value for the {Icon3} slot in this component."
+            },
+            "label1": {
+              "type": "string",
+              "description": "Value for the {Label1} slot in this component."
+            },
+            "label2": {
+              "type": "string",
+              "description": "Value for the {Label2} slot in this component."
+            },
+            "label3": {
+              "type": "string",
+              "description": "Value for the {Label3} slot in this component."
+            },
+            "labelmainaction": {
+              "type": "string",
+              "description": "Value for the {LabelMainAction} slot in this component."
+            },
+            "iconmainaction": {
+              "type": "string",
+              "description": "Value for the {IconMainAction} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "FAB",
+        "slug": "fab",
+        "category": "actions",
+        "docs": "https://daisyui.com/components/fab/",
+        "classes": {
+          "component": [
+            "fab"
+          ],
+          "part": [
+            "fab-close",
+            "fab-main-action"
+          ],
+          "modifier": [
+            "fab-flower"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "fieldset",
+        "description": "Use a fieldset as a container for related form elements. Use `fieldset-legend` as the title. Use `label` as the description. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Value for the {title} slot in this component."
+            },
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            },
+            "description": {
+              "type": "string",
+              "description": "Value for the {description} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Fieldset",
+        "slug": "fieldset",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/fieldset/",
+        "classes": {
+          "component": [
+            "fieldset",
+            "label"
+          ],
+          "part": [
+            "fieldset-legend"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "file_input",
+        "description": "Use a file input to upload files. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "File input",
+        "slug": "file-input",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/file-input/",
+        "classes": {
+          "component": [
+            "file-input"
+          ],
+          "style": [
+            "file-input-ghost"
+          ],
+          "color": [
+            "file-input-neutral",
+            "file-input-primary",
+            "file-input-secondary",
+            "file-input-accent",
+            "file-input-info",
+            "file-input-success",
+            "file-input-warning",
+            "file-input-error"
+          ],
+          "size": [
+            "file-input-xs",
+            "file-input-sm",
+            "file-input-md",
+            "file-input-lg",
+            "file-input-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "filter",
+        "description": "A filter is a group of radio buttons. When the user selects an option, the filter hides the other options. It also shows a reset button next to the selected option. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Value for the {NAME} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Filter",
+        "slug": "filter",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/filter/",
+        "classes": {
+          "component": [
+            "filter"
+          ],
+          "part": [
+            "filter-reset"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "footer",
+        "description": "A footer can contain a logo, a copyright notice, and links to other pages. Category: layout.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Footer",
+        "slug": "footer",
+        "category": "layout",
+        "docs": "https://daisyui.com/components/footer/",
+        "classes": {
+          "component": [
+            "footer"
+          ],
+          "part": [
+            "footer-title"
+          ],
+          "placement": [
+            "footer-center"
+          ],
+          "direction": [
+            "footer-horizontal",
+            "footer-vertical"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "hero",
+        "description": "Use a hero to show a large box or image with a title and description. Category: layout.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Hero",
+        "slug": "hero",
+        "category": "layout",
+        "docs": "https://daisyui.com/components/hero/",
+        "classes": {
+          "component": [
+            "hero"
+          ],
+          "part": [
+            "hero-content",
+            "hero-overlay"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "hover_3d",
+        "description": "The hover 3D component is a wrapper that adds a 3D effect to its content. When the pointer is on the component, the component tilts and turns in relation to the pointer position. The `hover-3d` component puts eight hover zones above the content. Each zone detects pointer movement and turns the content by a small angle. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Hover 3D",
+        "slug": "hover-3d",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/hover-3d/",
+        "classes": {
+          "component": [
+            "hover-3d"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "hover_gallery",
+        "description": "A hover gallery is a container for images. The first image is visible by default. When the pointer moves horizontally on it, the other images appear. Use a hover gallery for product cards, e-commerce sites, portfolios, or image galleries. A hover gallery can contain a maximum of 10 images. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Hover gallery",
+        "slug": "hover-gallery",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/hover-gallery/",
+        "classes": {
+          "component": [
+            "hover-gallery"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "indicator",
+        "description": "Use an indicator to put an element at the corner of another element. Category: layout.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Indicator",
+        "slug": "indicator",
+        "category": "layout",
+        "docs": "https://daisyui.com/components/indicator/",
+        "classes": {
+          "component": [
+            "indicator"
+          ],
+          "part": [
+            "indicator-item"
+          ],
+          "placement": [
+            "indicator-start",
+            "indicator-center",
+            "indicator-end",
+            "indicator-top",
+            "indicator-middle",
+            "indicator-bottom"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "input",
+        "description": "Use a text input as a simple input field. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "description": "Value for the {type} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Input",
+        "slug": "input",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/input/",
+        "classes": {
+          "component": [
+            "input"
+          ],
+          "style": [
+            "input-ghost"
+          ],
+          "color": [
+            "input-neutral",
+            "input-primary",
+            "input-secondary",
+            "input-accent",
+            "input-info",
+            "input-success",
+            "input-warning",
+            "input-error"
+          ],
+          "size": [
+            "input-xs",
+            "input-sm",
+            "input-md",
+            "input-lg",
+            "input-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "join",
+        "description": "A join is a container that groups more than one item. Use it to group buttons, inputs, or other elements. The join applies a border radius to the first and last items. It can make a horizontal or vertical list of items. Category: layout.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Join",
+        "slug": "join",
+        "category": "layout",
+        "docs": "https://daisyui.com/components/join/",
+        "classes": {
+          "component": [
+            "join",
+            "join-item"
+          ],
+          "direction": [
+            "join-vertical",
+            "join-horizontal"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "kbd",
+        "description": "Use the kbd component to show keyboard shortcuts. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Kbd",
+        "slug": "kbd",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/kbd/",
+        "classes": {
+          "component": [
+            "kbd"
+          ],
+          "size": [
+            "kbd-xs",
+            "kbd-sm",
+            "kbd-md",
+            "kbd-lg",
+            "kbd-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "label",
+        "description": "Use a label to give a name or title to an input field. Put the label before or after the field. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Label",
+        "slug": "label",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/label/",
+        "classes": {
+          "component": [
+            "label",
+            "floating-label"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "link",
+        "description": "The link component adds an underline to links. Category: navigation.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Link",
+        "slug": "link",
+        "category": "navigation",
+        "docs": "https://daisyui.com/components/link/",
+        "classes": {
+          "component": [
+            "link"
+          ],
+          "style": [
+            "link-hover"
+          ],
+          "color": [
+            "link-neutral",
+            "link-primary",
+            "link-secondary",
+            "link-accent",
+            "link-success",
+            "link-info",
+            "link-warning",
+            "link-error"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "list",
+        "description": "Use a list to show information in rows in a vertical layout. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "List",
+        "slug": "list",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/list/",
+        "classes": {
+          "component": [
+            "list",
+            "list-row"
+          ],
+          "modifier": [
+            "list-col-wrap",
+            "list-col-grow"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "loading",
+        "description": "Use the loading component to show an animation while a process runs. Category: feedback.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Loading",
+        "slug": "loading",
+        "category": "feedback",
+        "docs": "https://daisyui.com/components/loading/",
+        "classes": {
+          "component": [
+            "loading"
+          ],
+          "style": [
+            "loading-spinner",
+            "loading-dots",
+            "loading-ring",
+            "loading-ball",
+            "loading-bars",
+            "loading-infinity"
+          ],
+          "size": [
+            "loading-xs",
+            "loading-sm",
+            "loading-md",
+            "loading-lg",
+            "loading-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mask",
+        "description": "A mask crops the content of an element to a common shape. Category: layout.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "image_url": {
+              "type": "string",
+              "description": "Value for the {image-url} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Mask",
+        "slug": "mask",
+        "category": "layout",
+        "docs": "https://daisyui.com/components/mask/",
+        "classes": {
+          "component": [
+            "mask"
+          ],
+          "style": [
+            "mask-squircle",
+            "mask-heart",
+            "mask-hexagon",
+            "mask-hexagon-2",
+            "mask-decagon",
+            "mask-pentagon",
+            "mask-diamond",
+            "mask-circle",
+            "mask-star",
+            "mask-star-2",
+            "mask-triangle",
+            "mask-triangle-2",
+            "mask-triangle-3",
+            "mask-triangle-4"
+          ],
+          "modifier": [
+            "mask-half-1",
+            "mask-half-2"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "megamenu",
+        "description": "A megamenu is a large horizontal menu. Each item opens a popover that shows a large group of navigation links. Use one megamenu at the top of the page. Each popover can contain a daisyUI menu or custom content. Use a megamenu on large screens. On small screens, hide it and show its content in a dropdown or drawer. Category: navigation.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            },
+            "image_url": {
+              "type": "string",
+              "description": "Value for the {image-url} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Megamenu",
+        "slug": "megamenu",
+        "category": "navigation",
+        "docs": "https://daisyui.com/components/megamenu/",
+        "classes": {
+          "component": [
+            "megamenu"
+          ],
+          "part": [
+            "megamenu-active"
+          ],
+          "modifier": [
+            "megamenu-wide",
+            "megamenu-full"
+          ],
+          "direction": [
+            "megamenu-vertical"
+          ],
+          "size": [
+            "megamenu-xs",
+            "megamenu-sm",
+            "megamenu-md",
+            "megamenu-lg",
+            "megamenu-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "menu",
+        "description": "Use a menu to show a list of links vertically or horizontally. Category: navigation.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Menu",
+        "slug": "menu",
+        "category": "navigation",
+        "docs": "https://daisyui.com/components/menu/",
+        "classes": {
+          "component": [
+            "menu"
+          ],
+          "part": [
+            "menu-title",
+            "menu-dropdown",
+            "menu-dropdown-toggle"
+          ],
+          "modifier": [
+            "menu-disabled",
+            "menu-active",
+            "menu-focus",
+            "menu-dropdown-show",
+            "menu-paged"
+          ],
+          "size": [
+            "menu-xs",
+            "menu-sm",
+            "menu-md",
+            "menu-lg",
+            "menu-xl"
+          ],
+          "direction": [
+            "menu-vertical",
+            "menu-horizontal"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mockup_browser",
+        "description": "A browser mockup is a box in the form of a browser window. Category: mockup.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Browser mockup",
+        "slug": "mockup-browser",
+        "category": "mockup",
+        "docs": "https://daisyui.com/components/mockup-browser/",
+        "classes": {
+          "component": [
+            "mockup-browser"
+          ],
+          "part": [
+            "mockup-browser-toolbar"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mockup_code",
+        "description": "Use a code mockup to show code in a box with the style of a code editor. Category: mockup.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Code mockup",
+        "slug": "mockup-code",
+        "category": "mockup",
+        "docs": "https://daisyui.com/components/mockup-code/",
+        "classes": {
+          "component": [
+            "mockup-code"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mockup_phone",
+        "description": "A phone mockup shows an iPhone mockup. Category: mockup.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Phone mockup",
+        "slug": "mockup-phone",
+        "category": "mockup",
+        "docs": "https://daisyui.com/components/mockup-phone/",
+        "classes": {
+          "component": [
+            "mockup-phone"
+          ],
+          "part": [
+            "mockup-phone-camera",
+            "mockup-phone-display"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mockup_window",
+        "description": "A window mockup is a box in the form of an operating-system window. Category: mockup.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Window mockup",
+        "slug": "mockup-window",
+        "category": "mockup",
+        "docs": "https://daisyui.com/components/mockup-window/",
+        "classes": {
+          "component": [
+            "mockup-window"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "modal",
+        "description": "A modal shows a dialog or box when the user clicks a button. Category: actions.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Modal",
+        "slug": "modal",
+        "category": "actions",
+        "docs": "https://daisyui.com/components/modal/",
+        "classes": {
+          "component": [
+            "modal"
+          ],
+          "part": [
+            "modal-box",
+            "modal-action",
+            "modal-backdrop",
+            "modal-toggle"
+          ],
+          "modifier": [
+            "modal-open"
+          ],
+          "placement": [
+            "modal-top",
+            "modal-middle",
+            "modal-bottom",
+            "modal-start",
+            "modal-end"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "navbar",
+        "description": "Use a navbar to show navigation at the top of the page. Category: navigation.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Navbar",
+        "slug": "navbar",
+        "category": "navigation",
+        "docs": "https://daisyui.com/components/navbar/",
+        "classes": {
+          "component": [
+            "navbar"
+          ],
+          "part": [
+            "navbar-start",
+            "navbar-center",
+            "navbar-end"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "otp",
+        "description": "An OTP is a one-time password component that lets a user enter a verification code. The code usually contains four to six digits. Use it for two-factor authentication (2FA) or passwordless login. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "OTP",
+        "slug": "otp",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/otp/",
+        "classes": {
+          "component": [
+            "otp"
+          ],
+          "size": [
+            "otp-xs",
+            "otp-sm",
+            "otp-md",
+            "otp-lg",
+            "otp-xl"
+          ],
+          "modifier": [
+            "otp-joined"
+          ],
+          "color": [
+            "otp-neutral",
+            "otp-primary",
+            "otp-secondary",
+            "otp-accent",
+            "otp-info",
+            "otp-success",
+            "otp-warning",
+            "otp-error"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "pagination",
+        "description": "Pagination is a group of buttons. Category: navigation.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Pagination",
+        "slug": "pagination",
+        "category": "navigation",
+        "docs": "https://daisyui.com/components/pagination/",
+        "classes": {
+          "component": [
+            "join"
+          ],
+          "part": [
+            "join-item"
+          ],
+          "direction": [
+            "join-vertical",
+            "join-horizontal"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "progress",
+        "description": "Use a progress bar to show task progress or the passage of time. Category: feedback.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Progress",
+        "slug": "progress",
+        "category": "feedback",
+        "docs": "https://daisyui.com/components/progress/",
+        "classes": {
+          "component": [
+            "progress"
+          ],
+          "color": [
+            "progress-neutral",
+            "progress-primary",
+            "progress-secondary",
+            "progress-accent",
+            "progress-info",
+            "progress-success",
+            "progress-warning",
+            "progress-error"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "radial_progress",
+        "description": "Use the radial progress component to show task progress or the passage of time. Category: feedback.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Radial progress",
+        "slug": "radial-progress",
+        "category": "feedback",
+        "docs": "https://daisyui.com/components/radial-progress/",
+        "classes": {
+          "component": [
+            "radial-progress"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "radio",
+        "description": "Use radio buttons to let the user select one option. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Radio",
+        "slug": "radio",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/radio/",
+        "classes": {
+          "component": [
+            "radio"
+          ],
+          "color": [
+            "radio-neutral",
+            "radio-primary",
+            "radio-secondary",
+            "radio-accent",
+            "radio-success",
+            "radio-warning",
+            "radio-info",
+            "radio-error"
+          ],
+          "size": [
+            "radio-xs",
+            "radio-sm",
+            "radio-md",
+            "radio-lg",
+            "radio-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "range",
+        "description": "Move a range-slider handle to select a value. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Range",
+        "slug": "range",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/range/",
+        "classes": {
+          "component": [
+            "range"
+          ],
+          "color": [
+            "range-neutral",
+            "range-primary",
+            "range-secondary",
+            "range-accent",
+            "range-success",
+            "range-warning",
+            "range-info",
+            "range-error"
+          ],
+          "size": [
+            "range-xs",
+            "range-sm",
+            "range-md",
+            "range-lg",
+            "range-xl"
+          ],
+          "direction": [
+            "range-vertical"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "rating",
+        "description": "A rating is a set of radio buttons that lets the user give a rating. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Rating",
+        "slug": "rating",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/rating/",
+        "classes": {
+          "component": [
+            "rating"
+          ],
+          "modifier": [
+            "rating-half",
+            "rating-hidden"
+          ],
+          "size": [
+            "rating-xs",
+            "rating-sm",
+            "rating-md",
+            "rating-lg",
+            "rating-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "select",
+        "description": "Use a select component to select a value from a list of options. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Select",
+        "slug": "select",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/select/",
+        "classes": {
+          "component": [
+            "select"
+          ],
+          "style": [
+            "select-ghost"
+          ],
+          "color": [
+            "select-neutral",
+            "select-primary",
+            "select-secondary",
+            "select-accent",
+            "select-info",
+            "select-success",
+            "select-warning",
+            "select-error"
+          ],
+          "size": [
+            "select-xs",
+            "select-sm",
+            "select-md",
+            "select-lg",
+            "select-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "skeleton",
+        "description": "Use a skeleton component to show a loading state. Category: feedback.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Skeleton",
+        "slug": "skeleton",
+        "category": "feedback",
+        "docs": "https://daisyui.com/components/skeleton/",
+        "classes": {
+          "component": [
+            "skeleton"
+          ],
+          "modifier": [
+            "skeleton-text"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "stack",
+        "description": "A stack puts elements on top of each other. Category: layout.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Stack",
+        "slug": "stack",
+        "category": "layout",
+        "docs": "https://daisyui.com/components/stack/",
+        "classes": {
+          "component": [
+            "stack"
+          ],
+          "modifier": [
+            "stack-top",
+            "stack-bottom",
+            "stack-start",
+            "stack-end"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "stat",
+        "description": "Use a stat component to show numbers and data in a block. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Stat",
+        "slug": "stat",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/stat/",
+        "classes": {
+          "component": [
+            "stats"
+          ],
+          "part": [
+            "stat",
+            "stat-title",
+            "stat-value",
+            "stat-desc",
+            "stat-figure",
+            "stat-actions"
+          ],
+          "direction": [
+            "stats-horizontal",
+            "stats-vertical"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "status",
+        "description": "A status is a small icon that shows the current state of an element. Example states are online, offline, and error. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Status",
+        "slug": "status",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/status/",
+        "classes": {
+          "component": [
+            "status"
+          ],
+          "color": [
+            "status-neutral",
+            "status-primary",
+            "status-secondary",
+            "status-accent",
+            "status-info",
+            "status-success",
+            "status-warning",
+            "status-error"
+          ],
+          "size": [
+            "status-xs",
+            "status-sm",
+            "status-md",
+            "status-lg",
+            "status-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "steps",
+        "description": "Use the steps component to show a sequence in a process. Category: navigation.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Steps",
+        "slug": "steps",
+        "category": "navigation",
+        "docs": "https://daisyui.com/components/steps/",
+        "classes": {
+          "component": [
+            "steps"
+          ],
+          "part": [
+            "step",
+            "step-icon"
+          ],
+          "color": [
+            "step-neutral",
+            "step-primary",
+            "step-secondary",
+            "step-accent",
+            "step-info",
+            "step-success",
+            "step-warning",
+            "step-error"
+          ],
+          "direction": [
+            "steps-vertical",
+            "steps-horizontal"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "swap",
+        "description": "Use the swap component to change the visibility of two elements. Control the swap with a checkbox or a class name. Category: actions.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Swap",
+        "slug": "swap",
+        "category": "actions",
+        "docs": "https://daisyui.com/components/swap/",
+        "classes": {
+          "component": [
+            "swap"
+          ],
+          "part": [
+            "swap-on",
+            "swap-off",
+            "swap-indeterminate"
+          ],
+          "modifier": [
+            "swap-active"
+          ],
+          "style": [
+            "swap-rotate",
+            "swap-flip"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "tab",
+        "description": "Use tabs to show a list of links in a tabbed format. Category: navigation.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Tab",
+        "slug": "tab",
+        "category": "navigation",
+        "docs": "https://daisyui.com/components/tab/",
+        "classes": {
+          "component": [
+            "tabs"
+          ],
+          "part": [
+            "tab",
+            "tab-content"
+          ],
+          "style": [
+            "tabs-box",
+            "tabs-border",
+            "tabs-lift"
+          ],
+          "size": [
+            "tabs-xs",
+            "tabs-sm",
+            "tabs-md",
+            "tabs-lg",
+            "tabs-xl"
+          ],
+          "modifier": [
+            "tab-active",
+            "tab-disabled"
+          ],
+          "placement": [
+            "tabs-top",
+            "tabs-bottom"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "table",
+        "description": "Use a table to show data in rows and columns. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Table",
+        "slug": "table",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/table/",
+        "classes": {
+          "component": [
+            "table"
+          ],
+          "modifier": [
+            "table-zebra",
+            "table-pin-rows",
+            "table-pin-cols"
+          ],
+          "size": [
+            "table-xs",
+            "table-sm",
+            "table-md",
+            "table-lg",
+            "table-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "text_rotate",
+        "description": "Text rotate can show a maximum of six text lines, one line at a time. It uses a continuous loop animation. The default animation time is 10 seconds. The animation pauses when the pointer is on the text. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Text rotate",
+        "slug": "text-rotate",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/text-rotate/",
+        "classes": {
+          "component": [
+            "text-rotate"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "textarea",
+        "description": "A textarea lets users enter text on more than one line. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Textarea",
+        "slug": "textarea",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/textarea/",
+        "classes": {
+          "component": [
+            "textarea"
+          ],
+          "style": [
+            "textarea-ghost"
+          ],
+          "color": [
+            "textarea-neutral",
+            "textarea-primary",
+            "textarea-secondary",
+            "textarea-accent",
+            "textarea-info",
+            "textarea-success",
+            "textarea-warning",
+            "textarea-error"
+          ],
+          "size": [
+            "textarea-xs",
+            "textarea-sm",
+            "textarea-md",
+            "textarea-lg",
+            "textarea-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "theme_controller",
+        "description": "If a checked checkbox or radio input has the `theme-controller` class, the page uses the theme in the input value. Category: actions.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "theme_name": {
+              "type": "string",
+              "description": "Value for the {theme-name} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Theme controller",
+        "slug": "theme-controller",
+        "category": "actions",
+        "docs": "https://daisyui.com/components/theme-controller/",
+        "classes": {
+          "component": [
+            "theme-controller"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "timeline",
+        "description": "Use a timeline to show a list of events in chronological order. Category: data display.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "start": {
+              "type": "string",
+              "description": "Value for the {start} slot in this component."
+            },
+            "icon": {
+              "type": "string",
+              "description": "Value for the {icon} slot in this component."
+            },
+            "end": {
+              "type": "string",
+              "description": "Value for the {end} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Timeline",
+        "slug": "timeline",
+        "category": "data display",
+        "docs": "https://daisyui.com/components/timeline/",
+        "classes": {
+          "component": [
+            "timeline"
+          ],
+          "part": [
+            "timeline-start",
+            "timeline-middle",
+            "timeline-end"
+          ],
+          "modifier": [
+            "timeline-snap-icon",
+            "timeline-box",
+            "timeline-compact"
+          ],
+          "direction": [
+            "timeline-vertical",
+            "timeline-horizontal"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "toast",
+        "description": "A toast is a wrapper that stacks elements in a corner of the page. Category: feedback.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Value for the {CONTENT} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Toast",
+        "slug": "toast",
+        "category": "feedback",
+        "docs": "https://daisyui.com/components/toast/",
+        "classes": {
+          "component": [
+            "toast"
+          ],
+          "placement": [
+            "toast-start",
+            "toast-center",
+            "toast-end",
+            "toast-top",
+            "toast-middle",
+            "toast-bottom"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "toggle",
+        "description": "A toggle is a checkbox with the style of a switch button. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Toggle",
+        "slug": "toggle",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/toggle/",
+        "classes": {
+          "component": [
+            "toggle"
+          ],
+          "color": [
+            "toggle-primary",
+            "toggle-secondary",
+            "toggle-accent",
+            "toggle-neutral",
+            "toggle-success",
+            "toggle-warning",
+            "toggle-info",
+            "toggle-error"
+          ],
+          "size": [
+            "toggle-xs",
+            "toggle-sm",
+            "toggle-md",
+            "toggle-lg",
+            "toggle-xl"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "tooltip",
+        "description": "A tooltip shows a message when the pointer is on an element. Category: feedback.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string",
+              "description": "Text or markup to place inside this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Tooltip",
+        "slug": "tooltip",
+        "category": "feedback",
+        "docs": "https://daisyui.com/components/tooltip/",
+        "classes": {
+          "component": [
+            "tooltip"
+          ],
+          "part": [
+            "tooltip-content"
+          ],
+          "modifier": [
+            "tooltip-open"
+          ],
+          "placement": [
+            "tooltip-top",
+            "tooltip-bottom",
+            "tooltip-left",
+            "tooltip-right"
+          ],
+          "alignment": [
+            "tooltip-start",
+            "tooltip-center",
+            "tooltip-end"
+          ],
+          "color": [
+            "tooltip-primary",
+            "tooltip-secondary",
+            "tooltip-accent",
+            "tooltip-info",
+            "tooltip-success",
+            "tooltip-warning",
+            "tooltip-error"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "validator",
+        "description": "The validator class sets an error color or a success color on a form element. The input validation rules control the color. Category: data input.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "description": "Value for the {type} slot in this component."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "meta": {
+        "title": "Validator",
+        "slug": "validator",
+        "category": "data input",
+        "docs": "https://daisyui.com/components/validator/",
+        "classes": {
+          "component": [
+            "validator"
+          ],
+          "part": [
+            "validator-hint"
+          ]
+        }
+      }
+    }
+  ]
+}
