@@ -2,8 +2,10 @@
 
 import { useRef, useState } from "react";
 import { ResultView } from "@/components/results";
+import { WidgetBody } from "@/components/widgets";
 import { extractItems } from "@/lib/items";
 import type { SearchPayload } from "@/lib/types";
+import { WIDGET_LAYOUTS, adaptResults } from "@/lib/widgets";
 
 const DEMOS = [
   "mechanical keyboards under 5000",
@@ -29,6 +31,7 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [data, setData] = useState<SearchPayload | null>(null);
   const [active, setActive] = useState(0);
+  const [layout, setLayout] = useState(0);
   const requestId = useRef(0);
 
   async function search(text: string) {
@@ -49,6 +52,7 @@ export default function Home() {
       if (!response.ok) throw new Error(body.error || "Search failed.");
       setData(body);
       setActive(0);
+      setLayout(0);
       requestAnimationFrame(() => {
         document.getElementById("trace")?.scrollIntoView({ behavior: "smooth", block: "start" });
       });
@@ -67,14 +71,21 @@ export default function Home() {
     data && data.results && typeof data.results === "object" && !Array.isArray(data.results)
       ? extractItems(data.results, data.engine)
       : [];
+  const widget =
+    data && data.results && typeof data.results === "object" && !Array.isArray(data.results)
+      ? adaptResults(data.engine, query, data.results)
+      : null;
+  const layouts = widget ? WIDGET_LAYOUTS[widget.kind] : null;
+  const layoutInfo = layouts?.[layout === 1 ? 1 : 0];
 
   return (
-    <main className="mx-auto flex w-full max-w-3xl flex-col gap-6 px-4 py-10">
+    <main className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 py-10">
       <header>
         <p className="text-sm font-medium text-primary">SerpAPI Hackathon</p>
         <h1 className="mt-1 text-3xl font-bold">Search</h1>
         <p className="mt-2 text-base-content/70">
-          Jev picks a SerpApi engine and three DaisyUI components. Switch components without searching again.
+          Jev picks a SerpApi engine. Matching results use a purpose-built layout, and you can switch to the other one
+          without searching again.
         </p>
       </header>
 
@@ -142,30 +153,60 @@ export default function Home() {
             {data.params && typeof data.params === "object" ? (
               <p className="mt-2 break-all text-sm text-base-content/70">{paramLine(data.params)}</p>
             ) : null}
-            <div className="mt-4 flex flex-wrap gap-2">
-              {names.map((name, index) => (
-                <button
-                  key={`${name}-${index}`}
-                  type="button"
-                  className={`btn btn-sm ${index === active ? "btn-primary" : "btn-outline"}`}
-                  aria-pressed={index === active}
-                  onClick={() => setActive(index)}
-                >
-                  {componentLabel(name)}
-                </button>
-              ))}
-            </div>
+            {layouts ? (
+              <>
+                {names.length ? (
+                  <p className="mt-3 text-sm text-base-content/60">Jev components: {names.map(componentLabel).join(", ")}</p>
+                ) : null}
+                <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="Layouts">
+                  {layouts.map((choice, index) => (
+                    <button
+                      key={choice.name}
+                      type="button"
+                      className={`btn btn-sm ${index === layout ? "btn-primary" : "btn-outline"}`}
+                      aria-pressed={index === layout}
+                      onClick={() => setLayout(index)}
+                    >
+                      {choice.name}
+                    </button>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className="mt-4 flex flex-wrap gap-2">
+                {names.map((name, index) => (
+                  <button
+                    key={`${name}-${index}`}
+                    type="button"
+                    className={`btn btn-sm ${index === active ? "btn-primary" : "btn-outline"}`}
+                    aria-pressed={index === active}
+                    onClick={() => setActive(index)}
+                  >
+                    {componentLabel(name)}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
-          <section aria-label={componentLabel(activeName)}>
-            <h2 className="mb-3 text-lg font-semibold capitalize">{componentLabel(activeName)}</h2>
-            <ResultView component={activeName} items={items} />
+          <section aria-label={layoutInfo?.name ?? componentLabel(activeName)}>
+            <h2 className={`text-lg font-semibold ${layoutInfo ? "" : "mb-3"}`}>
+              {layoutInfo?.name ?? componentLabel(activeName)}
+            </h2>
+            {layoutInfo ? <p className="mt-1 mb-3 text-sm text-base-content/60">{layoutInfo.note}</p> : null}
+            <div className="rounded-box border border-base-300 bg-base-100 p-4">
+              {widget && layoutInfo ? <WidgetBody model={widget} layout={layout} /> : <ResultView component={activeName} items={items} />}
+            </div>
           </section>
         </section>
       ) : null}
 
       <p className="text-sm text-base-content/60">
-        One search runs two Jev choices and one SerpApi call. Switching a component stays on this page.
+        One search runs Jev and one SerpApi call. Switching a layout stays on this page. Sample pairs live in the{" "}
+        <a className="link" href="/test">
+          widget lab
+        </a>
+        .
       </p>
     </main>
   );

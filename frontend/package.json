@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --experimental-strip-types lib/items.test.ts"
+    "test": "node --experimental-strip-types lib/items.test.ts && node --experimental-strip-types lib/widgets.test.ts"
   },
   "dependencies": {
     "next": "16.4.0",
