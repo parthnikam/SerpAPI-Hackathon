@@ -6,12 +6,17 @@ Usage:
 
 import json
 import os
+import ssl
 import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import date
+
+import certifi
 
 from jev import Jev, ROOT, load_dotenv
+from parse import extract_params, needs_parse
 
 QUERY_KEYS = ("q", "query", "search_query", "term", "text", "p", "k", "_nkw", "find_desc", "keywords")
 SKIP = {"search_metadata", "search_parameters", "serpapi_pagination", "pagination"}
@@ -51,10 +56,14 @@ def query(text):
     fn = engines[engine]
     props = fn["parameters"]["properties"]
     required = fn["parameters"].get("required") or []
-    params = {"engine": engine, **({"type": "search"} if engine == "google_maps" else {})}
+    params = {"engine": engine}
+    if needs_parse(props, required):
+        params.update(extract_params(text, engine, fn["parameters"], date.today().strftime("%A %Y-%m-%d")))
+    if engine == "google_maps":
+        params["type"] = "search"
     for name in QUERY_KEYS:
         if name in props:
-            params[name] = text
+            params.setdefault(name, text)
             break
     if "find_loc" in required:
         params.setdefault("find_loc", text)
@@ -64,11 +73,14 @@ def query(text):
 
     url = "https://serpapi.com/search.json?" + urllib.parse.urlencode({**params, "api_key": key})
     request = urllib.request.Request(url, headers={"User-Agent": "serpapi-hackathon"})
+    context = ssl.create_default_context(cafile=certifi.where())
     try:
-        with urllib.request.urlopen(request, timeout=90) as response:
+        with urllib.request.urlopen(request, timeout=90, context=context) as response:
             body = response.read().decode()
     except urllib.error.HTTPError as exc:
         body = exc.read().decode("utf-8", "replace")
+    except Exception as exc:
+        sys.exit("SerpApi request failed: " + str(exc).replace(key, "[redacted]"))
     results = json.loads(body.replace(key, "[redacted]"))
     if results.get("error"):
         sys.exit(results["error"])

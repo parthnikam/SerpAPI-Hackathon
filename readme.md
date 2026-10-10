@@ -1,10 +1,8 @@
 # SerpAPI Hackathon 2026
 
-A Single search box. Jev picks a SerpApi engine and a DaisyUI widget. The page renders live results in that widget.
+Google results are a pile of different shapes (links, news, products, places, jobs). a chat model can sort that out, but it spends a bit of time on long call and a lot of tokens to do it. and the result is just a bunch of text on the screen and maybe a few links here and there. nothing that the user can directly glance at and use for himself.
 
-Google results are a pile of different shapes (links, news, products, places, jobs). A chat model can sort that out, but it spends a time on long call and a lot of tokens to do it. 
-
-This app spends two short Jev choices and one SerpApi search, then fills a widget we already wrote.
+This app spends two short Jev choices and one SerpApi search, then fills a dynamic widget on the screen.
 
 **Track:** AI Agents.
 **Submit by:** 10 October 2026, 23:59 IST. Public GitHub repo, setup instructions, demo under three minutes.
