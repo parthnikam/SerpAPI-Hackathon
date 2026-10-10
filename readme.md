@@ -25,9 +25,9 @@ Demo queries:
 | Query | Engine | Widget |
 | --- | --- | --- |
 | mechanical keyboards under 5000 | `google_shopping` | product grid |
-| ISRO news this week | `google_news` | news list |
-| coffee near Koramangala | `google_maps` | place list |
-| python developer jobs in Bangalore | `google_jobs` | job list |
+| SpaceX news this week | `google_news` | news list |
+| coffee shops in Bay Area | `google_maps` | place list |
+| golang developer jobs in New York | `google_jobs` | job list |
 
 A fifth engine, `google` web search, is the fallback when Jev is unsure. It renders the generic result list.
 
@@ -86,7 +86,7 @@ Empty SerpApi results stay on the chosen widget and show an empty state. We do n
 - SerpApi client: one search per request. Cache the raw JSON on disk keyed by engine + query so styling does not spend credits twice.
 - Response: `{ engine, widget, confidence, items, trace }`.
 
-**Frontend** (`frontend/`, Vite, Tailwind, DaisyUI):
+**Frontend** (`frontend/`, Nextjs, Tailwind, DaisyUI):
 
 - Search box.
 - Trace line: engine, widget, both confidences, runner-up.
